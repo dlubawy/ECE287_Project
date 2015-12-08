@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -3.145
+TNS   : -87.339
+
+Type  : Slow 1200mV 85C Model Setup 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -2.493
+TNS   : -80.407
+
+Type  : Slow 1200mV 85C Model Setup 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : -1.744
+TNS   : -66.378
+
+Type  : Slow 1200mV 85C Model Setup 'p1|altpll_component|pll|clk[1]'
+Slack : -0.846
+TNS   : -1.690
+
+Type  : Slow 1200mV 85C Model Setup 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : -0.203
+TNS   : -0.381
+
+Type  : Slow 1200mV 85C Model Hold 'p1|altpll_component|pll|clk[1]'
+Slack : -0.088
+TNS   : -0.175
+
+Type  : Slow 1200mV 85C Model Hold 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : 0.634
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'p1|altpll_component|pll|clk[1]'
+Slack : -5.189
+TNS   : -68.719
+
+Type  : Slow 1200mV 85C Model Recovery 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : -0.354
+TNS   : -1.416
+
+Type  : Slow 1200mV 85C Model Removal 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'p1|altpll_component|pll|clk[1]'
+Slack : 3.680
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -57.216
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : -2.693
+TNS   : -109.306
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -1.285
+TNS   : -59.110
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[1]'
+Slack : 27.480
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.844
+TNS   : -76.587
+
+Type  : Slow 1200mV 0C Model Setup 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -2.221
+TNS   : -69.539
+
+Type  : Slow 1200mV 0C Model Setup 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : -1.454
+TNS   : -54.845
+
+Type  : Slow 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[1]'
+Slack : -0.654
+TNS   : -1.306
+
+Type  : Slow 1200mV 0C Model Setup 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : -0.086
+TNS   : -0.149
+
+Type  : Slow 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[1]'
+Slack : -0.199
+TNS   : -0.396
+
+Type  : Slow 1200mV 0C Model Hold 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : 0.578
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[1]'
+Slack : -4.625
+TNS   : -61.099
+
+Type  : Slow 1200mV 0C Model Recovery 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : -0.318
+TNS   : -1.272
+
+Type  : Slow 1200mV 0C Model Removal 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[1]'
+Slack : 3.213
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -57.128
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : -2.649
+TNS   : -107.898
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -1.285
+TNS   : -59.110
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 18.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[1]'
+Slack : 27.472
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.019
+TNS   : -22.612
+
+Type  : Fast 1200mV 0C Model Setup 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -0.668
+TNS   : -15.605
+
+Type  : Fast 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[1]'
+Slack : -0.606
+TNS   : -1.212
+
+Type  : Fast 1200mV 0C Model Setup 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : -0.353
+TNS   : -2.187
+
+Type  : Fast 1200mV 0C Model Setup 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[1]'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[1]'
+Slack : -2.834
+TNS   : -37.800
+
+Type  : Fast 1200mV 0C Model Recovery 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[1]'
+Slack : 1.915
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -54.882
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUDIO_DAC_ADC:u4|LRCK_1X'
+Slack : -1.000
+TNS   : -50.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'I2C_AV_Config:u3|mI2C_CTRL_CLK'
+Slack : -1.000
+TNS   : -46.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUDIO_DAC_ADC:u4|oAUD_BCK'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
+Slack : 17.924
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[1]'
+Slack : 27.553
+TNS   : 0.000
+
+------------------------------------------------------------
