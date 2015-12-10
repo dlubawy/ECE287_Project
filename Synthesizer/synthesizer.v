@@ -301,13 +301,62 @@ always@(posedge AUD_DACLRCK) begin
 	// DDS F = (SW*2^14)*(audio clock rate)/(2^32)
 	// 
 	DDS_accum = DDS_accum + {SW[17:0], 14'b0} ;
+    // For the saved address
+	DDS_accum2 = DDS_accum2 + {s_address, 14'b0} ;
 end
+
+// saves the current audio output
+reg [17:0]s_address;
+save_address save(CLOCK_50, ~KEY[0], SW[17:0], KEY[3], s_address);
 
 //hook up the ROM table for sine generation
 sync_rom sineTable(CLOCK_50, DDS_accum[31:24], sine_out);
 //hook up the ROM table for 90 degrees phase shift (64/256)
 sync_rom sineTable_90(CLOCK_50, DDS_accum[31:24]+8'd64, sine_out_90);
+//hook up the ROM table for sine generation
+sync_rom sineTable_2(CLOCK_50, DDS_accum2[31:24], sine_out);
+//hook up the ROM table for 90 degrees phase shift (64/256)
+sync_rom sineTable_90_2(CLOCK_50, DDS_accum2[31:24]+8'd64, sine_out_90);
+endmodule
 
+module save_address(clk, rst, address, save, s_address);
+input clk;
+input [17:0]address;
+input save;
+
+reg S;
+reg NS;
+
+output [17:0]s_address;
+
+parameter
+    S0 = 1'b0, S1 = 1'b1;
+
+always@(posedge clk or negedge rst) begin
+    if(rst == 0) begin
+        s_address <= 0;
+        S <= S0;
+    end
+    else begin
+        S <= NS
+        case(S)
+            S0: s_address <= 0;
+            S1: s_address <= address;
+        endcase
+    end
+end
+
+always@(*) begin
+    case(S)
+        S0:begin
+            if(save == 1)
+                NS = S0;
+            else
+                NS = S1;
+        end
+        S1: NS = S1;
+    endcase
+end
 endmodule
 
 //////////////////////////////////////////////////
@@ -582,6 +631,7 @@ begin
 	endcase
 end
 endmodule
+
 //////////////////////////////////////////////////
 // sine ROM generator in Matlab
 /*
