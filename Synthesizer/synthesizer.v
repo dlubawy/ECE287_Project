@@ -21,7 +21,7 @@
 
 module synthesizer (
     // Clock Input
-    input         CLOCK_27,    // 27 MHz
+    input         CLOCK2_50,    // 27 MHz
     input         CLOCK_50,    // 50 MHz
     input         EXT_CLOCK,   // External Clock
     // Push Button
@@ -259,7 +259,7 @@ assign	AUD_XCK		=	AUD_CTRL_CLK;
 
 Reset_Delay			r0	(	.iCLK(CLOCK_50),.oRESET(DLY_RST)	);
 
-VGA_Audio_PLL 		p1	(	.areset(~DLY_RST),.inclk0(CLOCK_27),.c0(VGA_CTRL_CLK),.c1(AUD_CTRL_CLK),.c2(VGA_CLK)	);
+VGA_Audio_PLL 		p1	(	.areset(~DLY_RST),.inclk0(CLOCK2_50),.c0(VGA_CTRL_CLK),.c1(AUD_CTRL_CLK),.c2(VGA_CLK)	);
 
 I2C_AV_Config 		u3	(	//	Host Side
 							.iCLK(CLOCK_50),

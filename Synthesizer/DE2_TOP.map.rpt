@@ -1,6 +1,6 @@
 Analysis & Synthesis report for DE2_TOP
-Fri Dec 11 02:50:13 2015
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Dec 11 16:04:24 2015
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
 ---------------------
@@ -13,20 +13,20 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. State Machine - |synthesizer|I2C_AV_Config:u3|mSetup_ST
- 10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
- 16. Parameter Settings for User Entity Instance: I2C_AV_Config:u3
- 17. Parameter Settings for User Entity Instance: AUDIO_DAC_ADC:u4
- 18. altpll Parameter Settings by Entity Instance
- 19. Port Connectivity Checks: "AUDIO_DAC_ADC:u4"
- 20. Port Connectivity Checks: "I2C_AV_Config:u3|I2C_Controller:u0"
- 21. Port Connectivity Checks: "VGA_Audio_PLL:p1"
+  8. State Machine - |synthesizer|I2C_AV_Config:u3|mSetup_ST
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
+ 15. Parameter Settings for User Entity Instance: I2C_AV_Config:u3
+ 16. Parameter Settings for User Entity Instance: AUDIO_DAC_ADC:u4
+ 17. altpll Parameter Settings by Entity Instance
+ 18. Port Connectivity Checks: "AUDIO_DAC_ADC:u4"
+ 19. Port Connectivity Checks: "I2C_AV_Config:u3|I2C_Controller:u0"
+ 20. Port Connectivity Checks: "VGA_Audio_PLL:p1"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
  22. Elapsed Time Per Partition
  23. Analysis & Synthesis Messages
 
@@ -35,40 +35,41 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 11 02:50:13 2015           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; DE2_TOP                                         ;
-; Top-level Entity Name              ; synthesizer                                     ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 2,439                                           ;
-;     Total combinational functions  ; 2,428                                           ;
-;     Dedicated logic registers      ; 378                                             ;
-; Total registers                    ; 378                                             ;
-; Total pins                         ; 425                                             ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 1                                               ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 11 16:04:24 2015      ;
+; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
+; Revision Name                      ; DE2_TOP                                    ;
+; Top-level Entity Name              ; synthesizer                                ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 2,401                                      ;
+;     Total combinational functions  ; 2,389                                      ;
+;     Dedicated logic registers      ; 380                                        ;
+; Total registers                    ; 380                                        ;
+; Total pins                         ; 425                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 1                                          ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -76,8 +77,9 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                                      ; synthesizer        ; DE2_TOP            ;
-; Family name                                                                ; Cyclone II         ; Stratix            ;
+; Family name                                                                ; Cyclone IV E       ; Stratix            ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Maximum processors allowed for parallel compilation                        ; 1                  ; 1                  ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -117,12 +119,14 @@ applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -130,7 +134,7 @@ applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
 ; Report Parameter Settings                                                  ; On                 ; On                 ;
 ; Report Source Assignments                                                  ; On                 ; On                 ;
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
@@ -162,28 +166,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                         ;
-+----------------------------------+-----------------+-----------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                   ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+-----------------------------+-----------------------------------------------------------------------------------+---------+
-; AUDIO_DAC_ADC.v                  ; yes             ; User Verilog HDL File       ; C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/AUDIO_DAC_ADC.v  ;         ;
-; I2C_AV_Config.v                  ; yes             ; User Verilog HDL File       ; C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_AV_Config.v  ;         ;
-; I2C_Controller.v                 ; yes             ; User Verilog HDL File       ; C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_Controller.v ;         ;
-; Reset_Delay.v                    ; yes             ; User Verilog HDL File       ; C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/Reset_Delay.v    ;         ;
-; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File  ; C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/VGA_Audio_PLL.v  ;         ;
-; synthesizer.v                    ; yes             ; User Verilog HDL File       ; C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/synthesizer.v    ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                      ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                  ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc                 ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc               ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc               ;         ;
-+----------------------------------+-----------------+-----------------------------+-----------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                   ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+-----------------------------+------------------------------------------------------------------+---------+
+; AUDIO_DAC_ADC.v                  ; yes             ; User Verilog HDL File       ; C:/Users/balchdl/ece287_project/Synthesizer/AUDIO_DAC_ADC.v      ;         ;
+; I2C_AV_Config.v                  ; yes             ; User Verilog HDL File       ; C:/Users/balchdl/ece287_project/Synthesizer/I2C_AV_Config.v      ;         ;
+; I2C_Controller.v                 ; yes             ; User Verilog HDL File       ; C:/Users/balchdl/ece287_project/Synthesizer/I2C_Controller.v     ;         ;
+; Reset_Delay.v                    ; yes             ; User Verilog HDL File       ; C:/Users/balchdl/ece287_project/Synthesizer/Reset_Delay.v        ;         ;
+; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File  ; C:/Users/balchdl/ece287_project/Synthesizer/VGA_Audio_PLL.v      ;         ;
+; synthesizer.v                    ; yes             ; User Verilog HDL File       ; C:/Users/balchdl/ece287_project/Synthesizer/synthesizer.v        ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                ; c:/altera/14.0/quartus/libraries/megafunctions/altpll.tdf        ;         ;
+; aglobal140.inc                   ; yes             ; Megafunction                ; c:/altera/14.0/quartus/libraries/megafunctions/aglobal140.inc    ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                ; c:/altera/14.0/quartus/libraries/megafunctions/stratix_pll.inc   ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                ; c:/altera/14.0/quartus/libraries/megafunctions/stratixii_pll.inc ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                ; c:/altera/14.0/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
++----------------------------------+-----------------+-----------------------------+------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -191,20 +195,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 2,439          ;
+; Estimated Total logic elements              ; 2,401          ;
 ;                                             ;                ;
-; Total combinational functions               ; 2428           ;
+; Total combinational functions               ; 2389           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 1844           ;
+;     -- 4 input functions                    ; 1811           ;
 ;     -- 3 input functions                    ; 415            ;
-;     -- <=2 input functions                  ; 169            ;
+;     -- <=2 input functions                  ; 163            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 2220           ;
+;     -- normal mode                          ; 2181           ;
 ;     -- arithmetic mode                      ; 208            ;
 ;                                             ;                ;
-; Total registers                             ; 378            ;
-;     -- Dedicated logic registers            ; 378            ;
+; Total registers                             ; 380            ;
+;     -- Dedicated logic registers            ; 380            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 425            ;
@@ -212,10 +216,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Total PLLs                                  ; 1              ;
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
-; Maximum fan-out node                        ; DDS_accum2[27] ;
-; Maximum fan-out                             ; 222            ;
-; Total fan-out                               ; 10062          ;
-; Average fan-out                             ; 3.11           ;
+; Maximum fan-out node                        ; DDS_accum4[27] ;
+; Maximum fan-out                             ; 219            ;
+; Total fan-out                               ; 10509          ;
+; Average fan-out                             ; 2.78           ;
 +---------------------------------------------+----------------+
 
 
@@ -224,32 +228,23 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                   ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
-; |synthesizer                    ; 2428 (266)        ; 378 (126)    ; 0           ; 0            ; 0       ; 0         ; 425  ; 0            ; |synthesizer                                          ; work         ;
+; |synthesizer                    ; 2389 (266)        ; 380 (126)    ; 0           ; 0            ; 0       ; 0         ; 425  ; 0            ; |synthesizer                                          ; work         ;
 ;    |AUDIO_DAC_ADC:u4|           ; 74 (74)           ; 50 (50)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|AUDIO_DAC_ADC:u4                         ; work         ;
-;    |I2C_AV_Config:u3|           ; 94 (49)           ; 61 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|I2C_AV_Config:u3                         ; work         ;
-;       |I2C_Controller:u0|       ; 45 (45)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|I2C_AV_Config:u3|I2C_Controller:u0       ; work         ;
-;    |Reset_Delay:r0|             ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|Reset_Delay:r0                           ; work         ;
+;    |I2C_AV_Config:u3|           ; 96 (50)           ; 63 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|I2C_AV_Config:u3                         ; work         ;
+;       |I2C_Controller:u0|       ; 46 (46)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|I2C_AV_Config:u3|I2C_Controller:u0       ; work         ;
+;    |Reset_Delay:r0|             ; 27 (27)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|Reset_Delay:r0                           ; work         ;
 ;    |VGA_Audio_PLL:p1|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|VGA_Audio_PLL:p1                         ; work         ;
 ;       |altpll:altpll_component| ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|VGA_Audio_PLL:p1|altpll:altpll_component ; work         ;
-;    |sync_rom:sineTable_2|       ; 311 (311)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_2                     ; work         ;
-;    |sync_rom:sineTable_3|       ; 309 (309)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_3                     ; work         ;
-;    |sync_rom:sineTable_4|       ; 314 (314)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_4                     ; work         ;
-;    |sync_rom:sineTable_90_2|    ; 180 (180)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90_2                  ; work         ;
-;    |sync_rom:sineTable_90_3|    ; 182 (182)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90_3                  ; work         ;
-;    |sync_rom:sineTable_90_4|    ; 179 (179)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90_4                  ; work         ;
-;    |sync_rom:sineTable_90|      ; 182 (182)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90                    ; work         ;
-;    |sync_rom:sineTable|         ; 309 (309)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable                       ; work         ;
+;    |sync_rom:sineTable_2|       ; 304 (304)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_2                     ; work         ;
+;    |sync_rom:sineTable_3|       ; 311 (311)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_3                     ; work         ;
+;    |sync_rom:sineTable_4|       ; 307 (307)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_4                     ; work         ;
+;    |sync_rom:sineTable_90_2|    ; 174 (174)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90_2                  ; work         ;
+;    |sync_rom:sineTable_90_3|    ; 170 (170)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90_3                  ; work         ;
+;    |sync_rom:sineTable_90_4|    ; 175 (175)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90_4                  ; work         ;
+;    |sync_rom:sineTable_90|      ; 170 (170)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable_90                    ; work         ;
+;    |sync_rom:sineTable|         ; 315 (315)         ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |synthesizer|sync_rom:sineTable                       ; work         ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                            ;
-+--------+--------------+---------+--------------+--------------+-------------------------------+----------------------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance               ; IP Include File                                                                  ;
-+--------+--------------+---------+--------------+--------------+-------------------------------+----------------------------------------------------------------------------------+
-; Altera ; ALTPLL       ; N/A     ; N/A          ; N/A          ; |synthesizer|VGA_Audio_PLL:p1 ; C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/VGA_Audio_PLL.v ;
-+--------+--------------+---------+--------------+--------------+-------------------------------+----------------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -271,24 +266,22 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------+-------------------------------------------------------+
 ; I2C_AV_Config:u3|mI2C_DATA[7,8,13..17,19,23]            ; Stuck at GND due to stuck port data_in                ;
 ; I2C_AV_Config:u3|I2C_Controller:u0|SD[7,8,13..17,19,23] ; Stuck at GND due to stuck port data_in                ;
-; I2C_AV_Config:u3|mI2C_DATA[20,21]                       ; Merged with I2C_AV_Config:u3|mI2C_DATA[18]            ;
-; I2C_AV_Config:u3|mI2C_DATA[6]                           ; Merged with I2C_AV_Config:u3|mI2C_DATA[5]             ;
+; sync_rom:sineTable_4|sine[15]                           ; Merged with sync_rom:sineTable_4|sine[14]             ;
+; sync_rom:sineTable_3|sine[15]                           ; Merged with sync_rom:sineTable_3|sine[14]             ;
+; sync_rom:sineTable_2|sine[15]                           ; Merged with sync_rom:sineTable_2|sine[14]             ;
+; sync_rom:sineTable|sine[15]                             ; Merged with sync_rom:sineTable|sine[14]               ;
+; sync_rom:sineTable_90_4|sine[15]                        ; Merged with sync_rom:sineTable_90_4|sine[14]          ;
+; sync_rom:sineTable_90_3|sine[15]                        ; Merged with sync_rom:sineTable_90_3|sine[14]          ;
+; sync_rom:sineTable_90_2|sine[15]                        ; Merged with sync_rom:sineTable_90_2|sine[14]          ;
+; sync_rom:sineTable_90|sine[15]                          ; Merged with sync_rom:sineTable_90|sine[14]            ;
 ; I2C_AV_Config:u3|I2C_Controller:u0|SD[20,21]            ; Merged with I2C_AV_Config:u3|I2C_Controller:u0|SD[18] ;
 ; I2C_AV_Config:u3|I2C_Controller:u0|SD[6]                ; Merged with I2C_AV_Config:u3|I2C_Controller:u0|SD[5]  ;
-; sync_rom:sineTable_90_4|sine[15]                        ; Merged with sync_rom:sineTable_90_4|sine[14]          ;
-; sync_rom:sineTable_4|sine[15]                           ; Merged with sync_rom:sineTable_4|sine[14]             ;
-; sync_rom:sineTable_90_3|sine[15]                        ; Merged with sync_rom:sineTable_90_3|sine[14]          ;
-; sync_rom:sineTable_3|sine[15]                           ; Merged with sync_rom:sineTable_3|sine[14]             ;
-; sync_rom:sineTable_90_2|sine[15]                        ; Merged with sync_rom:sineTable_90_2|sine[14]          ;
-; sync_rom:sineTable_2|sine[15]                           ; Merged with sync_rom:sineTable_2|sine[14]             ;
-; sync_rom:sineTable_90|sine[15]                          ; Merged with sync_rom:sineTable_90|sine[14]            ;
-; sync_rom:sineTable|sine[15]                             ; Merged with sync_rom:sineTable|sine[14]               ;
-; I2C_AV_Config:u3|mI2C_DATA[18]                          ; Merged with I2C_AV_Config:u3|mI2C_DATA[22]            ;
-; I2C_AV_Config:u3|I2C_Controller:u0|SD[18]               ; Merged with I2C_AV_Config:u3|I2C_Controller:u0|SD[22] ;
+; I2C_AV_Config:u3|mI2C_DATA[20,21]                       ; Merged with I2C_AV_Config:u3|mI2C_DATA[18]            ;
+; I2C_AV_Config:u3|mI2C_DATA[6]                           ; Merged with I2C_AV_Config:u3|mI2C_DATA[5]             ;
 ; I2C_AV_Config:u3|mSetup_ST~9                            ; Lost fanout                                           ;
 ; I2C_AV_Config:u3|mSetup_ST~10                           ; Lost fanout                                           ;
 ; AUDIO_DAC_ADC:u4|BCK_DIV[3]                             ; Stuck at GND due to stuck port data_in                ;
-; Total Number of Removed Registers = 37                  ;                                                       ;
+; Total Number of Removed Registers = 35                  ;                                                       ;
 +---------------------------------------------------------+-------------------------------------------------------+
 
 
@@ -323,12 +316,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 378   ;
+; Total registers                              ; 380   ;
 ; Number of registers using Synchronous Clear  ; 29    ;
 ; Number of registers using Synchronous Load   ; 10    ;
 ; Number of registers using Asynchronous Clear ; 57    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 248   ;
+; Number of registers using Clock Enable       ; 250   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -338,10 +331,10 @@ Encoding Type:  One-Hot
 +--------------------------------------------------+---------+
 ; Inverted Register                                ; Fan out ;
 +--------------------------------------------------+---------+
-; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[0] ; 16      ;
-; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[2] ; 19      ;
-; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[3] ; 19      ;
-; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[1] ; 14      ;
+; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[0] ; 18      ;
+; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[2] ; 20      ;
+; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[3] ; 18      ;
+; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[1] ; 13      ;
 ; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[4] ; 12      ;
 ; I2C_AV_Config:u3|I2C_Controller:u0|SD_COUNTER[5] ; 11      ;
 ; I2C_AV_Config:u3|I2C_Controller:u0|SCLK          ; 3       ;
@@ -734,7 +727,7 @@ Encoding Type:  One-Hot
 ; WIDTH_CLOCK                   ; 6                 ; Untyped                           ;
 ; WIDTH_PHASECOUNTERSELECT      ; 4                 ; Untyped                           ;
 ; USING_FBMIMICBIDIR_PORT       ; OFF               ; Untyped                           ;
-; DEVICE_FAMILY                 ; Cyclone II        ; Untyped                           ;
+; DEVICE_FAMILY                 ; Cyclone IV E      ; Untyped                           ;
 ; SCAN_CHAIN_MIF_FILE           ; UNUSED            ; Untyped                           ;
 ; SIM_GATE_LOCK_DEVICE_BEHAVIOR ; OFF               ; Untyped                           ;
 ; AUTO_CARRY_CHAINS             ; ON                ; AUTO_CARRY                        ;
@@ -831,12 +824,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 425                         ;
+; cycloneiii_ff         ; 380                         ;
+;     CLR               ; 17                          ;
+;     CLR SCLR          ; 25                          ;
+;     ENA               ; 231                         ;
+;     ENA CLR           ; 9                           ;
+;     ENA CLR SLD       ; 6                           ;
+;     ENA SCLR SLD      ; 4                           ;
+;     plain             ; 88                          ;
+; cycloneiii_io_obuf    ; 159                         ;
+; cycloneiii_lcell_comb ; 2391                        ;
+;     arith             ; 208                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 47                          ;
+;         3 data inputs ; 160                         ;
+;     normal            ; 2183                        ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 108                         ;
+;         3 data inputs ; 255                         ;
+;         4 data inputs ; 1811                        ;
+; cycloneiii_pll        ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.66                        ;
++-----------------------+-----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:26     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -845,8 +871,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 11 02:49:43 2015
+    Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+    Info: Processing started: Fri Dec 11 16:04:13 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Synthesizer -c DE2_TOP
 Info (12021): Found 1 design units, including 1 entities, in source file audio_dac_adc.v
     Info (12023): Found entity 1: AUDIO_DAC_ADC
@@ -945,6 +971,14 @@ Warning (10230): Verilog HDL assignment warning at AUDIO_DAC_ADC.v(113): truncat
 Warning (10230): Verilog HDL assignment warning at AUDIO_DAC_ADC.v(121): truncated value with size 32 to match size of target (7)
 Warning (10230): Verilog HDL assignment warning at AUDIO_DAC_ADC.v(140): truncated value with size 32 to match size of target (4)
 Info (12128): Elaborating entity "sync_rom" for hierarchy "sync_rom:sineTable"
+Warning (12069): Ignored assignment(s) for "SD_DAT[0]" because "SD_DAT" is not a bus or array
+Warning (12069): Ignored assignment(s) for "SD_DAT[1]" because "SD_DAT" is not a bus or array
+Warning (12069): Ignored assignment(s) for "SD_DAT[2]" because "SD_DAT" is not a bus or array
+Warning (12069): Ignored assignment(s) for "SD_DAT[3]" because "SD_DAT" is not a bus or array
+Warning (12069): Ignored assignment(s) for "SD_DAT[0]" because "SD_DAT" is not a bus or array
+Warning (12069): Ignored assignment(s) for "SD_DAT[1]" because "SD_DAT" is not a bus or array
+Warning (12069): Ignored assignment(s) for "SD_DAT[2]" because "SD_DAT" is not a bus or array
+Warning (12069): Ignored assignment(s) for "SD_DAT[3]" because "SD_DAT" is not a bus or array
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "AUD_DACLRCK" and its non-tri-state driver.
@@ -1175,9 +1209,12 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ENET_RST_N" is stuck at VCC
     Warning (13410): Pin "ENET_CLK" is stuck at GND
     Warning (13410): Pin "TD_RESET" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected
+Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected
 Warning (21074): Design contains 24 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "EXT_CLOCK"
     Warning (15610): No output dependent on input pin "UART_RXD"
@@ -1203,16 +1240,16 @@ Warning (21074): Design contains 24 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "TD_DATA[7]"
     Warning (15610): No output dependent on input pin "TD_HS"
     Warning (15610): No output dependent on input pin "TD_VS"
-Info (21057): Implemented 2865 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2829 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 48 input pins
     Info (21059): Implemented 218 output pins
     Info (21060): Implemented 159 bidirectional pins
-    Info (21061): Implemented 2439 logic cells
+    Info (21061): Implemented 2403 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 267 warnings
-    Info: Peak virtual memory: 520 megabytes
-    Info: Processing ended: Fri Dec 11 02:50:13 2015
-    Info: Elapsed time: 00:00:30
-    Info: Total CPU time (on all processors): 00:00:28
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 277 warnings
+    Info: Peak virtual memory: 575 megabytes
+    Info: Processing ended: Fri Dec 11 16:04:24 2015
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:11
 
 
