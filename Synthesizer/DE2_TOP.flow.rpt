@@ -1,6 +1,6 @@
 Flow report for DE2_TOP
-Tue Dec 08 15:10:44 2015
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Fri Dec 11 02:51:07 2015
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -21,43 +21,42 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Dec 08 15:10:44 2015      ;
-; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name                      ; DE2_TOP                                    ;
-; Top-level Entity Name              ; sine_wave                                  ;
-; Family                             ; Cyclone IV E                               ;
-; Device                             ; EP4CE115F29C7                              ;
-; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 190 / 114,480 ( < 1 % )                    ;
-;     Total combinational functions  ; 185 / 114,480 ( < 1 % )                    ;
-;     Dedicated logic registers      ; 120 / 114,480 ( < 1 % )                    ;
-; Total registers                    ; 120                                        ;
-; Total pins                         ; 425 / 529 ( 80 % )                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 8,192 / 3,981,312 ( < 1 % )                ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
-; Total PLLs                         ; 1 / 4 ( 25 % )                             ;
-+------------------------------------+--------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Fri Dec 11 02:51:07 2015           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; DE2_TOP                                         ;
+; Top-level Entity Name              ; synthesizer                                     ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 2,435 / 33,216 ( 7 % )                          ;
+;     Total combinational functions  ; 2,428 / 33,216 ( 7 % )                          ;
+;     Dedicated logic registers      ; 378 / 33,216 ( 1 % )                            ;
+; Total registers                    ; 378                                             ;
+; Total pins                         ; 425 / 475 ( 89 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                  ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
++------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,7 +64,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/08/2015 15:08:53 ;
+; Start date & time ; 12/11/2015 02:49:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_TOP             ;
 +-------------------+---------------------+
@@ -76,15 +75,13 @@ agreement for further details.
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 164143905090.144960533331548 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 164143905090.144982018409344 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)    ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 14622752                     ; --            ; sine_wave   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; sine_wave   ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; sine_wave   ; Top            ;
-; TOP_LEVEL_ENTITY                    ; sine_wave                    ; DE2_TOP       ; --          ; --             ;
+; PARTITION_COLOR                     ; 14622752                     ; --            ; synthesizer ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; synthesizer ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; synthesizer ; Top            ;
+; TOP_LEVEL_ENTITY                    ; synthesizer                  ; DE2_TOP       ; --          ; --             ;
 +-------------------------------------+------------------------------+---------------+-------------+----------------+
 
 
@@ -93,12 +90,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 691 MB              ; 00:00:57                           ;
-; Fitter                    ; 00:00:53     ; 1.0                     ; 1251 MB             ; 00:00:51                           ;
-; Assembler                 ; 00:00:09     ; 1.0                     ; 632 MB              ; 00:00:09                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 786 MB              ; 00:00:08                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 612 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:40     ; --                      ; --                  ; 00:02:07                           ;
+; Analysis & Synthesis      ; 00:00:29     ; 1.0                     ; 516 MB              ; 00:00:27                           ;
+; Fitter                    ; 00:00:37     ; 1.0                     ; 786 MB              ; 00:00:36                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 446 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 457 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 432 MB              ; 00:00:03                           ;
+; Total                     ; 00:01:17     ; --                      ; --                  ; 00:01:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

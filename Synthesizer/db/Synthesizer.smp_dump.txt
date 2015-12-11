@@ -1,5 +1,5 @@
 
-State Machine - |sine_wave|I2C_AV_Config:u3|mSetup_ST
+State Machine - |synthesizer|I2C_AV_Config:u3|mSetup_ST
 Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
 mSetup_ST.0000 0 0 0 
 mSetup_ST.0001 1 0 1 
