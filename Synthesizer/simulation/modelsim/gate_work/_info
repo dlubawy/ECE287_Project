@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Drew\Documents\School\ECE287\ece287_project\Synthesizer\simulation\modelsim
+vsynthesizer
+!i10b 1
+!s100 ge@H?2g8hmjOYao_7^42W1
+Ic[GefRcCLITFOz7ZY5Dz33
+V<3ZGN;BbXP`D>cMf6^F:B1
+Z1 dC:\Users\Drew\Documents\School\ECE287\ece287_project\Synthesizer\simulation\modelsim
+w1449810940
+8DE2_TOP.vo
+FDE2_TOP.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1449810981.562000
+!s107 DE2_TOP.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|DE2_TOP.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

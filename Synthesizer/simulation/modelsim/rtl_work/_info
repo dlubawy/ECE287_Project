@@ -1,0 +1,130 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Drew\Documents\School\ECE287\ece287_project\Synthesizer\simulation\modelsim
+vAUDIO_DAC_ADC
+IU<Dk;Cho]PA<igKb6oc6H1
+Vk:IHI<RW;cgzC9GO:WQ]22
+Z1 dC:\Users\Drew\Documents\School\ECE287\ece287_project\Synthesizer\simulation\modelsim
+w1449794749
+8C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/AUDIO_DAC_ADC.v
+FC:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/AUDIO_DAC_ADC.v
+L0 9
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@u@d@i@o_@d@a@c_@a@d@c
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer -O0
+!i10b 1
+!s100 :cn22<>1IfaMZLJb]X_?>1
+!s85 0
+!s108 1449810955.006000
+!s107 C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/AUDIO_DAC_ADC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer|C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/AUDIO_DAC_ADC.v|
+!s101 -O0
+vI2C_AV_Config
+IPOP?N7aa8BH3OC:5j=0fo0
+VQB9KIJcb;ofAz@5DWG2C_1
+R1
+Z5 w1449794750
+8C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_AV_Config.v
+FC:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_AV_Config.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@i2@c_@a@v_@config
+!i10b 1
+!s100 zn5oBNjLb=hzoi:hXcPV_0
+!s85 0
+!s108 1449810955.116000
+!s107 C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_AV_Config.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer|C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_AV_Config.v|
+!s101 -O0
+vI2C_Controller
+IflcE0YjUT8P@XRk5ISz`20
+VZmC6jMkN`OWc<9_n9o2@V0
+R1
+R5
+8C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_Controller.v
+FC:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_Controller.v
+L0 42
+R2
+r1
+31
+R3
+R4
+n@i2@c_@controller
+!i10b 1
+!s100 VKao9iVPT^b]6d7GG4OeC2
+!s85 0
+!s108 1449810955.218000
+!s107 C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_Controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer|C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/I2C_Controller.v|
+!s101 -O0
+vReset_Delay
+Ik^bCKYlF6O?TU39BQzQX^2
+VDoL>1[=KXh_Qfl<A4]Nfm0
+R1
+R5
+8C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/Reset_Delay.v
+FC:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/Reset_Delay.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@reset_@delay
+!i10b 1
+!s100 52i_A[P?V@T]V6YaCYc[02
+!s85 0
+!s108 1449810955.325000
+!s107 C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/Reset_Delay.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer|C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/Reset_Delay.v|
+!s101 -O0
+vsync_rom
+!i10b 1
+!s100 JBG6k]J`AgiL6nN?YL5]13
+IGodn8T?;8FX@UkGKVW[fH0
+Vbk1PSdHOnj_2C6;hUJ;]A1
+R1
+w0
+8C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/synthesizer.v
+FC:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/synthesizer.v
+L0 361
+R2
+r1
+!s85 0
+31
+!s108 1449810955.532000
+!s107 C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/synthesizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer|C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/synthesizer.v|
+!s101 -O0
+R3
+R4
+vVGA_Audio_PLL
+I7[@nOGh4;0b_XKN@15gWV0
+V=mTEhk^YhJldfeE5R:mNT3
+R1
+R5
+8C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/VGA_Audio_PLL.v
+FC:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/VGA_Audio_PLL.v
+L0 39
+R2
+r1
+31
+R3
+R4
+n@v@g@a_@audio_@p@l@l
+!i10b 1
+!s100 >a]S>K>eW3T@b5VRLe3hU2
+!s85 0
+!s108 1449810955.421000
+!s107 C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/VGA_Audio_PLL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer|C:/Users/Drew/Documents/School/ECE287/ece287_project/Synthesizer/VGA_Audio_PLL.v|
+!s101 -O0
